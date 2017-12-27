@@ -23,6 +23,12 @@ body {
 	color: #ffffff;
 }
 .BeforeCenter {
-	color: #333333;
+	color: #555555;
 	font-size: 2rem;
+	font-family: 'Expletus Sans', cursive;
+}
+.storyId {
+	color: blanchedalmond;
+	font-size: 1.4rem;
+	font-family: 'Expletus Sans', cursive;
 }
