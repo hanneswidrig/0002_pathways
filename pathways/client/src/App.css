@@ -1,34 +1,52 @@
 html {
 	height: 100%;
 }
+
 body {
 	height: 100%;
 	background-color: #111111;
 }
+
 #root {
 	height: 100%;
 }
+
 .App {
 	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.Entries {
+	width: 75%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
 .CenterText {
-	width: 80%;
 	text-align: center;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: 'Expletus Sans', cursive;
 	color: #ffffff;
 }
+
 .BeforeCenter {
 	color: #555555;
 	font-size: 2rem;
 	font-family: 'Expletus Sans', cursive;
 }
-.storyId {
+
+.StoryId {
 	color: blanchedalmond;
 	font-size: 1.4rem;
 	font-family: 'Expletus Sans', cursive;
+}
+
+.Timeline {
+	width: 25%;
+	padding-top: 25px;
+	color: #ffffff;
+	font-size: .8rem;
 }

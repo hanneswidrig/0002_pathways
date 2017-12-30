@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import ArrowKeysReact from 'arrow-keys-react';
 import './App.css';
+import Entry from './components/Entry';
+import PreviousEntry from './components/PreviousEntry';
+import Timeline from './components/Timeline';
 
 class App extends Component {
 	constructor() {
@@ -63,31 +66,18 @@ class App extends Component {
   render() {
     return (
       <div {...ArrowKeysReact.events} tabIndex="1" className="App">
-				<div className="storyId">{this.state.currentLoc}</div>
+				<div className="Entries">
+				<div className="StoryId">{this.state.currentLoc}</div>
 				{
 					this.isFirstStory() ? null : 
 					<PreviousEntry story_entry={this.state.stories[this.state.currentLoc - 1].story_entry}/>
 				}
 				<Entry story_entry={this.state.stories[this.state.currentLoc].story_entry}/>
-      </div>
+				</div>
+				<Timeline />
+			</div>
     );
   }
-}
-
-class PreviousEntry extends Component {
-	render() {
-		return(
-			<div className="BeforeCenter">{this.props.story_entry}</div>
-		);
-	}
-}
-
-class Entry extends Component {
-	render() {
-		return(
-			<div className="CenterText">{this.props.story_entry}</div>
-		);
-	}
 }
 
 export default App;
