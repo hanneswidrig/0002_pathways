@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "arrow-keys-react": "^1.0.6",
+    "jest-cli": "^22.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
@@ -17,5 +18,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:5000"
 }
