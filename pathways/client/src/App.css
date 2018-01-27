@@ -4,21 +4,27 @@ html {
 
 body {
   height: 100%;
-  background-color: #111111;
+  background-color: #dedcee;
 }
 
 #root {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr 48px;
+  font-family: 'Vollkorn';
+  margin: 0 auto;
 }
 
 .Entries {
-  width: 75%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,26 +33,42 @@ body {
 
 .CenterText {
   text-align: center;
-  font-size: 3rem;
-  font-family: 'Expletus Sans', cursive;
-  color: #ffffff;
+  font-size: 4rem;
+  color: #6a60a9;
 }
 
 .BeforeCenter {
-  color: #555555;
+  color: #6a60a9;
   font-size: 2rem;
-  font-family: 'Expletus Sans', cursive;
 }
 
 .StoryId {
-  color: blanchedalmond;
-  font-size: 1.4rem;
-  font-family: 'Expletus Sans', cursive;
+  color: #6a60a9;
+  font-size: 3rem;
 }
 
 .Timeline {
-  width: 25%;
-  padding-top: 25px;
-  color: #ffffff;
-  font-size: 0.8rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  padding-top: 10px;
+  color: #6a60a9;
+}
+
+.tree-view_item {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.tree-view_children {
+  margin-bottom: 15px;
+}
+
+footer {
+  height: 24px;
+  grid-column: 1 / 3;
+  grid-row: 3;
+  margin: auto;
+  text-align: center;
+  font-family: 'Lato';
+  color: #6a60a9;
 }

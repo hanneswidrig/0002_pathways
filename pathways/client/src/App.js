@@ -77,6 +77,7 @@ class App extends Component {
           />
         </div>
         <Timeline />
+        <footer>Built by Hannes Widrig in {new Date().getFullYear()}</footer>
       </div>
     );
   }

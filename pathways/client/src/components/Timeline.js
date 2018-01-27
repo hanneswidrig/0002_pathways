@@ -16,7 +16,7 @@ class Timeline extends Component {
             <TreeView
               key={i}
               defaultCollapsed={false}
-              nodeLabel={'Chapter ' + i}
+              nodeLabel={'Chapter ' + (i + 1)}
             >
               {node.map(entry => (
                 <div className="info" key={entry + '-' + i}>
