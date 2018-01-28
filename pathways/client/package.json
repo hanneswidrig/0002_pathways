@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.1.5",
     "arrow-keys-react": "^1.0.6",
     "jest-cli": "^22.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-feather": "^1.0.8",
     "react-redux": "^5.0.6",
     "react-scripts": "1.0.17",
     "react-treeview": "^0.4.7",
