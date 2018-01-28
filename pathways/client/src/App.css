@@ -20,7 +20,7 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 64px 1fr 48px;
+  grid-template-rows: 64px 1fr 1fr 1fr 48px;
   font-family: 'Vollkorn';
   margin: 0 auto;
 }
@@ -69,7 +69,7 @@ body {
 
 .Entries {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +90,7 @@ body {
 .Timeline {
   align-self: center;
   grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-row: 2 / 5;
   padding-top: 10px;
   color: #6a60a9;
 }
@@ -104,10 +104,23 @@ body {
   margin-bottom: 15px;
 }
 
+.StoryEntryPager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+  grid-row: 4;
+}
+
+.StoryEntryPager > button {
+  flex-grow: 1;
+  margin: 10px;
+}
+
 footer {
   height: 24px;
   grid-column: 1 / 4;
-  grid-row: 3;
+  grid-row: 5;
   margin: auto;
   text-align: center;
   font-family: 'Lato';
