@@ -112,9 +112,30 @@ body {
   grid-row: 4;
 }
 
-.StoryEntryPager > button {
+.StoryEntryPager > button,
+.Chapters > button {
+  border: 2px solid #fbd14b;
+  background-color: #fbd14b;
+  height: 44px;
   flex-grow: 1;
   margin: 10px;
+}
+
+.StoryEntryPager > button:hover,
+.Chapters > button:hover,
+.StoryEntryPager > button:focus,
+.Chapters > button:focus,
+.StoryEntryPager > button:active,
+.Chapters > button:active {
+  color: #fbd14b;
+  border: 2px solid #fbd14b;
+}
+
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
 }
 
 footer {
