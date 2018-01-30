@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+// Application Dependencies
 import ArrowKeysReact from 'arrow-keys-react';
-import Navigation from './components/Navigation';
+import React, { Component } from 'react';
+// Components
+import Entries from './components/Entries';
 import Footer from './components/Footer';
-import Timeline from './components/Timeline';
-import Entry from './components/Entry';
-import PreviousEntry from './components/PreviousEntry';
+import Navigation from './components/Navigation';
 import StoryEntryPager from './components/StoryEntryPager';
-// import Entries from './components/Entries';
+import Timeline from './components/Timeline';
+// CSS/JS
 import './App.css';
 
 class App extends Component {
@@ -60,6 +61,15 @@ class App extends Component {
       return false;
     }
   }
+  isLastStory() {
+    let isLast =
+      this.state.currentLoc + 1 === this.state.stories.length ? true : false;
+    if (isLast && this.state.stories[0].id !== '') {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   componentDidMount() {
     fetch('/stories')
@@ -75,27 +85,15 @@ class App extends Component {
           currentLoc={this.state.currentLoc}
           handleClick={this.handleClick}
         />
-        <div className="Entries">
-          {this.isFirstStory() ? null : (
-            <PreviousEntry
-              story_entry={
-                this.state.stories[this.state.currentLoc - 1].story_entry
-              }
-            />
-          )}
-          <Entry
-            story_entry={this.state.stories[this.state.currentLoc].story_entry}
-          />
-        </div>
+        <Entries
+          story={this.state.stories[this.state.currentLoc]}
+          currentLoc={this.state.currentLoc}
+        />
         {this.state.active && <Timeline />}
         <StoryEntryPager
           back={this.prevStory}
           next={this.nextStory}
-          lastStory={
-            this.state.currentLoc + 1 === this.state.stories.length
-              ? true
-              : false
-          }
+          lastStory={this.isLastStory()}
         />
         <Footer />
       </div>

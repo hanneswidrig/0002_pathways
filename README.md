@@ -1,25 +1,30 @@
 # Pathways
-#### A choose-your-own adventure style React based game.
+
+#### A choose-your-own adventure style React based game
+
 This is currently a work in progress game, basic functionality to traverse stories is implemented via buttons or left/right arrow keys.
 
 ![Screenshot](https://i.imgur.com/lABGmiF.png)
 
 ## Running Pathways
-*VSCode is my editor of choice, so the instructions below are intended to explain how to easily run Pathways locally.*
+
+_VSCode is my editor of choice, so the instructions below are intended to explain how to easily run Pathways locally._
 
 ### VSCode Instructions
+
 1. Clone the repository
 2. Install dependencies for Express back-end.
-```bash 
+```bash
 cd 0002_pathways/pathways/
 npm install
-```  
+```
 3. Install dependencies for React front-end
 ```bash
-cd 0002_pathways/pathways/client/ 
+cd 0002_pathways/pathways/client/
 npm install
 ```
-4. Run the `run server` task in VSCode. **If you are not using VSCode, please use the instructions below.**
+
+4. Run the `run server` task in VSCode. -If you are not using VSCode, please use the instructions below.-
 
 ### Alternative Instructions
 
@@ -29,12 +34,13 @@ node 0002_pathways/pathways/bin/www
 ```
 4b. Start React front-end web application. This allows you to actually use the website.
 ```bash
-cd 0002_pathways/pathways/client/ 
+cd 0002_pathways/pathways/client/
 npm start
 ```
 
 ## TODO
-*Stars indicates highest priority*
+
+_Stars indicates highest priority_
 
 - [ ] :star: Switch to Redux
 - [ ] More in-depth single storyline
@@ -44,7 +50,8 @@ npm start
 - [ ] Abstraction to supporting many stories
 
 ## Future Work / Investigations
-*Might be implemented or just something I thought was a good idea.* :open_hands:
+
+_Might be implemented or just something I thought was a good idea._ :open_hands:
 
 - [ ] TypeScript => JavaScript
 - [ ] Login/Registration to keep track of results
@@ -53,3 +60,4 @@ npm start
 - [ ] Testing
 - [ ] Git Flow
 - [ ] Better application name?
+- [ ] Dockerize application
