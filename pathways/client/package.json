@@ -6,6 +6,7 @@
     "antd": "^3.1.5",
     "arrow-keys-react": "^1.0.6",
     "jest-cli": "^22.1.4",
+    "jquery": "^3.3.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-feather": "^1.0.8",
