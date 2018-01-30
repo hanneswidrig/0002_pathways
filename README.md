@@ -1,7 +1,7 @@
 # Pathways
 #### A choose-your-own adventure style React based game.
-
 This is currently a work in progress game, basic functionality to traverse stories is implemented via buttons or left/right arrow keys.
+
 ![Screenshot](https://i.imgur.com/lABGmiF.png)
 
 ## Running Pathways
