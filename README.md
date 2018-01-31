@@ -4,7 +4,7 @@
 
 This is currently a work in progress game, basic functionality to traverse stories is implemented via buttons or left/right arrow keys.
 
-![Screenshot](https://i.imgur.com/lABGmiF.png)
+![Screenshot of Pathways](https://i.imgur.com/8O3j1fP.png)
 
 ## Running Pathways
 
