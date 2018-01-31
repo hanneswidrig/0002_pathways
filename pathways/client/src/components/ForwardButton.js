@@ -6,11 +6,12 @@ class FowardButton extends Component {
   render() {
     return (
       <Button
+        className="Button"
         disabled={this.props.lastStory}
         type="default"
         onClick={this.props.next}
       >
-        <span className="Chapters-text">Next</span>
+        <span>Next</span>
       </Button>
     );
   }

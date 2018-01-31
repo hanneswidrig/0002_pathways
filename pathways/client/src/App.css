@@ -1,19 +1,16 @@
 html {
-  height: 100%;
-}
+  height: 100%; }
 
 body {
   margin: 0;
   height: 100%;
-  background-color: #dedcee;
-}
+  background-color: #dedcee; }
 
 #root {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .App {
   height: 100vh;
@@ -21,51 +18,36 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 64px 1fr 1fr 1fr 48px;
-  font-family: 'Vollkorn';
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .Nav {
-  background-color: #6a60a9;
+  color: #dedcee;
+  background-color: #1a1733;
   grid-column: 1 / 4;
   grid-row: 1;
   display: flex;
+  font: 2rem "Faune", sans-serif;
   justify-content: space-between;
   align-items: center;
-}
+  text-align: center; }
 
-.Name {
+.Nav .Name {
   margin-left: 25px;
-}
+  padding-bottom: 10px; }
 
-.Name > a {
-  color: white;
-  font-family: 'Lato';
-  font-size: 2rem;
-  line-height: 2rem;
-  text-decoration: none;
-}
+.Nav .Count {
+  padding-bottom: 5px; }
 
-.Name > a:hover {
+.Nav .Chapters {
+  margin-right: 25px; }
+
+.Nav section a {
+  line-height: 1rem;
   color: #dedcee;
-}
+  text-decoration: none; }
 
-.Count {
-  font-family: 'Lato';
-  color: white;
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
-.Chapters {
-  text-align: center;
-  margin-right: 25px;
-}
-
-.Chapters-text {
-  font-family: 'Lato';
-  font-weight: bold;
-}
+.Nav section a:hover {
+  color: #ada9d5; }
 
 .Entries {
   grid-column: 2 / 3;
@@ -73,77 +55,54 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .CenterText {
-  text-align: center;
-  font-size: 4rem;
-  color: #6a60a9;
-}
-
-.BeforeCenter {
-  color: #6a60a9;
-  font-size: 2rem;
-}
+  color: #1a1733;
+  font: 3rem "Faune", sans-serif;
+  text-align: center; }
 
 .Timeline {
   align-self: center;
   grid-column: 3 / 4;
   grid-row: 2 / 5;
-  padding-top: 10px;
-  color: #6a60a9;
-}
-
-.tree-view_item {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.tree-view_children {
-  margin-bottom: 15px;
-}
+  padding-top: 10px; }
 
 .StoryEntryPager {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 2 / 3;
-  grid-row: 4;
-}
+  grid-row: 4; }
 
-.StoryEntryPager > button,
-.Chapters > button {
-  border: 2px solid #fbd14b;
-  background-color: #fbd14b;
+.Button {
+  color: #1a1733;
+  font: 1.125rem "Faune", sans-serif;
+  border: 3px solid #fff2b0;
+  background-color: #fff2b0;
+  border-radius: 0px;
   height: 44px;
   flex-grow: 1;
-  margin: 10px;
-}
+  margin: 8px; }
 
-.StoryEntryPager > button:hover,
-.Chapters > button:hover,
-.StoryEntryPager > button:focus,
-.Chapters > button:focus,
-.StoryEntryPager > button:active,
-.Chapters > button:active {
-  color: #fbd14b;
-  border: 2px solid #fbd14b;
-}
+.Button:hover,
+.Button:focus,
+.Button:active {
+  color: #1a1733;
+  border: 3px solid #fbd14b;
+  background-color: #fbd14b; }
 
 :focus {
-  outline: none;
-}
+  outline: none; }
+
 ::-moz-focus-inner {
-  border: 0;
-}
+  border: 0; }
 
 footer {
+  color: #1a1733;
+  font: 16px "Faune", sans-serif;
   height: 24px;
   grid-column: 1 / 4;
   grid-row: 5;
   margin: auto;
-  text-align: center;
-  font-family: 'Lato';
-  color: #6a60a9;
-}
+  text-align: center; }

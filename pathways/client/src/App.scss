@@ -1,0 +1,135 @@
+$primary-color: #1a1733;
+$primary-inv-color: #dedcee;
+$app-button-color: #fbd14b;
+$accent-yellow: #fff2b0;
+$accent-green: #9ee8c5;
+
+$main-font: 'Faune', sans-serif;
+$complementary-font: 'Vollkorn', 'sans-serif';
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: $primary-inv-color;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 64px 1fr 1fr 1fr 48px;
+  margin: 0 auto;
+}
+
+.Nav {
+  color: $primary-inv-color;
+  background-color: $primary-color;
+  grid-column: 1 / 4;
+  grid-row: 1;
+  display: flex;
+  font: 2rem $main-font;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Nav .Name {
+  margin-left: 25px;
+  padding-bottom: 10px;
+}
+
+.Nav .Count {
+  padding-bottom: 5px;
+}
+
+.Nav .Chapters {
+  margin-right: 25px;
+}
+
+.Nav section a {
+  line-height: 1rem;
+  color: $primary-inv-color;
+  text-decoration: none;
+}
+
+.Nav section a:hover {
+  color: darken($primary-inv-color, 15%);
+}
+
+.Entries {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CenterText {
+  color: $primary-color;
+  font: 3rem $main-font;
+  text-align: center;
+}
+
+.Timeline {
+  align-self: center;
+  grid-column: 3 / 4;
+  grid-row: 2 / 5;
+  padding-top: 10px;
+}
+
+.StoryEntryPager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+  grid-row: 4;
+}
+
+.Button {
+  color: $primary-color;
+  font: 1.125rem $main-font;
+  border: 3px solid $accent-yellow;
+  background-color: $accent-yellow;
+  border-radius: 0px;
+  height: 44px;
+  flex-grow: 1;
+  margin: 8px;
+}
+
+.Button:hover,
+.Button:focus,
+.Button:active {
+  color: $primary-color;
+  border: 3px solid $app-button-color;
+  background-color: $app-button-color;
+}
+
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+footer {
+  color: $primary-color;
+  font: 16px $main-font;
+  height: 24px;
+  grid-column: 1 / 4;
+  grid-row: 5;
+  margin: auto;
+  text-align: center;
+}

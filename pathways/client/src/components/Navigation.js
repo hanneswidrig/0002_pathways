@@ -13,8 +13,12 @@ class Navigation extends Component {
           <div className="StoryId">{this.props.currentLoc + 1}</div>
         </section>
         <section className="Chapters">
-          <Button type="default" onClick={this.props.handleClick}>
-            <span className="Chapters-text">Chapters</span>
+          <Button
+            className="Button"
+            type="default"
+            onClick={this.props.handleClick}
+          >
+            <span>Chapters</span>
           </Button>
         </section>
       </div>
